@@ -1,0 +1,18 @@
+
+@import "tailwindcss";
+
+@font-face {
+    font-family: "AI Font";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Michroma-Regular.woff2") 
+    format("woff2");
+}
+
+body {
+    font-family: "AI Font", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
