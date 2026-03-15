@@ -1,0 +1,9 @@
+@reference "../../../app.css";
+
+.category-list
+{
+    @apply flex flex-col items-center justify-center 
+        p-6 rounded-md bg-white/10 
+        shadow-xl transition duration-600 
+        hover:-translate-y-2 hover:shadow-cyan-500;
+}

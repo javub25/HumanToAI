@@ -1,0 +1,8 @@
+<h2 id="categories-title" 
+    class="text-center text-cyan-300  text-2xl md:text-4xl font-extrabold">
+    CATEGORIES
+</h2>
+
+<app-categories-list [onCategorySelect]="updateCategory"></app-categories-list>
+
+<app-categories-evolution [categoryReceived]="currentCategory()"></app-categories-evolution>

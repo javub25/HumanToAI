@@ -1,0 +1,22 @@
+<ul class="flex items-center justify-center flex-wrap gap-6 mt-15 mb-30">
+    @for (category of categoriesList; track category.id){
+        <li class="w-40 md:h-40 h-33">
+           <a 
+              href="#evolution-img"
+              [aria-label]="category.name"
+              class="category-list"
+              (click)="onCategorySelect(category.name)"
+             >
+                <img 
+                    [src]="category.icon" 
+                    [alt]="category.name"
+                    class="w-14 h-14 object-contain mb-3" 
+                />
+
+                <span class="text-cyan-400 text-[12px] uppercase text-center">
+                    {{category.name}}
+                </span>
+           </a>
+        </li>
+    }
+</ul>
