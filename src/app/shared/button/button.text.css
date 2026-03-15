@@ -1,0 +1,19 @@
+@reference "../../app.css";
+
+.button-app
+{
+    @apply relative z-10 w-fit rounded-full px-6 md:px-7 py-3
+    text-black bg-cyan-500 cursor-pointer uppercase overflow-hidden
+    inline-flex
+}
+
+.button-app__text-above {
+    @apply transition duration-500 
+    group-hover:-translate-y-[200%]
+}
+
+.button-app__text-below 
+{
+    @apply absolute inset-0 translate-y-[200%] 
+    transition duration-500 group-hover:translate-y-0
+}
