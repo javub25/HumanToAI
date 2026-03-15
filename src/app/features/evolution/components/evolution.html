@@ -1,0 +1,38 @@
+
+<article class="max-w-7xl mx-auto px-4 py-11">
+    <ul class="group flex flex-col md:flex-row items-center gap-16">
+        <li class="w-full md:w-3/5 overflow-hidden rounded-[2.5rem] shadow-xl transition-all duration-700 group-hover:shadow-cyan-500 group-hover:-translate-y-2"> 
+            <img 
+                id="evolution-img"
+                [src]="evolution()?.image" 
+                [alt]="evolution()?.alt"
+                class="w-full h-[500px] object-cover scale-105 group-hover:scale-100 rounded-md duration-1000"
+            />
+        </li>
+        
+        <li class="w-full md:w-2/5 flex flex-col items-start space-y-8">
+            
+            <h2 class="text-xl uppercase tracking-[0.2em] text-cyan-300">
+                EXPLORE THE {{categoryReceived()}} EVOLUTION
+            </h2>
+
+            <p class="text-white text-lg md:text-xl leading-relaxed">
+                {{evolution()?.description}}
+            </p>
+
+            <div class="flex items-center gap-4">
+                <img src="/assets/images/svg/doubleChevron.svg" 
+                    alt="Double Chevron icon"
+                />
+
+                <button 
+                    aria-label="evolution-button" 
+                    (click)="updatePeriod(nextPeriod())">
+                    <app-button-text 
+                        [buttonText]="`switch to ${nextPeriod()}`">
+                    </app-button-text>                
+                </button>
+            </div>
+        </li>
+    </ul>
+</article>
