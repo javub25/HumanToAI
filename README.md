@@ -6,7 +6,7 @@ Every user can see the evolution of differents categories:
 - **Education**
 - **Work**
 - **Art**
-- **Medicine**
+- **Health**
 - **Life**
 
 ## 📸 Screenshots
