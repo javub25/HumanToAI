@@ -18,5 +18,5 @@ html {
 }
 
 main {
-    @apply grid min-h-dvh grid-rows-[auto_1fr_auto]
+    @apply grid min-h-dvh grid-rows-[auto_1fr_auto];
 }
