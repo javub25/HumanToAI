@@ -1,7 +1,7 @@
 import { Component, input, computed, signal} from '@angular/core';
 import { EvolutionPeriodType } from '@/app/features/evolution/models/evolution.model';
 import { createEvolutionData } from '@/app/features/evolution/mapper/evolution.mapper';
-import { ButtonText } from '@/app/shared/button/button.text';
+import { ButtonText } from '@/app/shared/components/button/button.text';
 import { CategoryNames } from '@/app/features/categories/models/categories.model';
 
 @Component({

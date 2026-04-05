@@ -1,4 +1,4 @@
-import { ButtonText } from "@/app/shared/button/button.text";
+import { ButtonText } from "@/app/shared/components/button/button.text";
 import { Component } from "@angular/core";
 
 @Component({
